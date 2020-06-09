@@ -1,0 +1,14 @@
+{
+  "{xiaofanggui}shebei": {
+    "xiaofanggui___shebei.signal_input_csv": {
+      "domain": "signal",
+      "stream": "xiaofanggui___shebei.signal_input",
+      "type": "csv"
+    },
+    "xiaofanggui___shebei.signal_input_json": {
+      "domain": "signal",
+      "stream": "xiaofanggui___shebei.signal_input",
+      "type": "json"
+    }
+  }
+}

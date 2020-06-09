@@ -1,0 +1,13 @@
+---
+apiVersion: thingswise.com/v1
+kind: package
+spec:
+  categories: []
+  keys:
+  - i18n: {zh-cn: equipment}
+    name: equ
+  - i18n: {zh-cn: pipiant}
+    name: pin
+  - i18n: {zh-cn: company}
+    name: com
+  name: xiaofanggui

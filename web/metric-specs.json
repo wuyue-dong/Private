@@ -1,0 +1,86 @@
+{
+  "metricSpecs": {
+    "signal.ercipengfang": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "com|pin|equ"
+      ],
+      "model": [
+        "{xiaofanggui}shebei"
+      ],
+      "name": {
+        "i18n": {
+          "zh-CN": "\u4e8c\u6b21\u55b7\u653e"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "zh-CN": "\u4e8c\u6b21\u55b7\u653e (signal)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "zh-CN": "\u4e8c\u6b21\u55b7\u653e"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "com": {
+            "pin": {
+              "equ": {
+                "periods": [
+                  "5s"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "timezone": "Asia/Shanghai",
+      "unit": "",
+      "valueType": "number:statistics"
+    },
+    "signal.jinjipengfang": {
+      "decimal": 6,
+      "default-stats": "avg",
+      "hierarchy": [
+        "com|pin|equ"
+      ],
+      "model": [
+        "{xiaofanggui}shebei"
+      ],
+      "name": {
+        "i18n": {
+          "zh-CN": "\u7d27\u6025\u55b7\u653e"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "zh-CN": "\u7d27\u6025\u55b7\u653e (signal)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "zh-CN": "\u7d27\u6025\u55b7\u653e"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "com": {
+            "pin": {
+              "equ": {
+                "periods": [
+                  "5s"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "timezone": "Asia/Shanghai",
+      "unit": "",
+      "valueType": "number:statistics"
+    }
+  }
+}

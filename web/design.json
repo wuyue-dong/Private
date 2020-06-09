@@ -1,0 +1,29 @@
+{
+  "brandImagePath": "logo.png",
+  "datetimeFormat": {
+    "i18n": {
+      "en-US": "EEE MMM dd, yyyy HH:mm:ss.sss 'GMT'Z",
+      "zh-CN": "yyyy\u5e74MM\u6708dd\u65e5 EEE HH:mm:ss.sss 'GMT'Z",
+      "zh-TW": "yyyy\u5e74MM\u6708dd\u65e5 EEE HH:mm:ss.sss 'GMT'Z"
+    }
+  },
+  "defaultLanguage": "zh-CN",
+  "faviconPath": "favicon.png",
+  "languageTable": {},
+  "languages": {
+    "en-US": "English",
+    "zh-CN": "\u7b80\u4f53\u4e2d\u6587"
+  },
+  "pageTitle": {
+    "i18n": {
+      "en-US": "/opt/thingswise/model-designer/peixun/p2"
+    }
+  },
+  "showPoweredByAtHeader": false,
+  "viewTitle": {
+    "i18n": {
+      "en-US": "Project Designer",
+      "zh-CN": "\u9879\u76ee\u8bbe\u8ba1"
+    }
+  }
+}

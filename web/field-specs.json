@@ -1,0 +1,36 @@
+{
+  "signal.jinjipengfang": {
+    "category": null,
+    "name": {
+      "i18n": {
+        "zh-CN": "紧急喷放",
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  },
+  "signal.ercipengfang": {
+    "category": null,
+    "name": {
+      "i18n": {
+        "zh-CN": "二次喷放",
+        "en-US": null
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": null
+      }
+    },
+    "decimal": null,
+    "unit": null
+  }
+}

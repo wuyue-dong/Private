@@ -1,0 +1,56 @@
+{
+  "brandImagePath": "logo.png",
+  "defaultGeo": "com_1",
+  "defaultLanguage": "zh-CN",
+  "designSpecsPath": "design.json",
+  "faviconPath": "favicon.png",
+  "languages": {
+    "en-US": "English",
+    "zh-CN": "\u7b80\u4f53\u4e2d\u6587"
+  },
+  "metadataDeviceField": "deviceId",
+  "metadataDomain": "Lookup",
+  "metricSpecsPath": "metric-specs.json",
+  "objectHierarchies": {
+    "com|pin|equ": {
+      "default": true,
+      "hierarchy": [
+        {
+          "geoStructField": "com",
+          "i18n": {
+            "zh-cn": "company"
+          },
+          "name": "com",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "pin",
+          "i18n": {
+            "zh-cn": "pipiant"
+          },
+          "name": "pin",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "equ",
+          "i18n": {
+            "zh-cn": "equipment"
+          },
+          "name": "equ",
+          "type": "geo"
+        }
+      ],
+      "name": "com|pin|equ"
+    }
+  },
+  "pageTitle": {
+    "i18n": {
+      "en-US": "/opt/thingswise/model-designer/peixun/p2"
+    }
+  },
+  "viewTitle": {
+    "i18n": {
+      "en-US": "/opt/thingswise/model-designer/peixun/p2"
+    }
+  }
+}

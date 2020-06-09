@@ -1,0 +1,45 @@
+---
+apiVersion: thingswise.com/v1
+kind: entity
+metadata:
+  label:
+    i18n: {zh-CN: 工厂}
+spec:
+  class: plant
+  key: pin
+  lookups:
+  - {lookup_domain: Lookup, lookup_field: pin, name: default}
+  rollup: true
+  scope: company
+  superclass: []
+  tags: []
+  timezone: Asia/Shanghai
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: plant
+  fields:
+  - category: []
+    default_value: 0
+    label:
+      i18n: {zh-CN: 数据}
+    name: name
+    type: string
+  name: baise
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: plant
+  fields:
+  - category: []
+    index: true
+    name: com
+    type: string
+  - category: []
+    index: true
+    name: pin
+    type: string
+  kind: lookup
+  name: Lookup

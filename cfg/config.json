@@ -1,0 +1,283 @@
+{
+  "apiVersion": "thingswise.com/v1",
+  "categories": {},
+  "labels": {},
+  "model_hierarchy": [
+    {
+      "i18n": {
+        "zh-cn": "company"
+      },
+      "keys": [
+        "com"
+      ],
+      "models": [
+        "{xiaofanggui}company"
+      ]
+    },
+    {
+      "i18n": {
+        "zh-cn": "pipiant"
+      },
+      "keys": [
+        "pin"
+      ],
+      "models": [
+        "{xiaofanggui}plant"
+      ]
+    },
+    {
+      "i18n": {
+        "zh-cn": "equipment"
+      },
+      "keys": [
+        "equ"
+      ],
+      "models": [
+        "{xiaofanggui}shebei"
+      ]
+    }
+  ],
+  "models": {
+    "{xiaofanggui}company": {
+      "key": "com",
+      "label": {
+        "i18n": {
+          "zh-CN": "\u516c\u53f8"
+        }
+      },
+      "level": 0,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "com",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {},
+      "primary_domains": {
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "com",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        },
+        "baise": {
+          "fields": [
+            {
+              "category": [],
+              "default_value": 0,
+              "index": false,
+              "label": {
+                "i18n": {
+                  "zh-CN": "\u6570\u636e"
+                }
+              },
+              "name": "name",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "xiaofanggui___company__baise"
+        }
+      },
+      "rollup": true,
+      "secondary_domains": {},
+      "superclass": [],
+      "tags": [],
+      "timezone": "Asia/Shanghai"
+    },
+    "{xiaofanggui}plant": {
+      "key": "pin",
+      "label": {
+        "i18n": {
+          "zh-CN": "\u5de5\u5382"
+        }
+      },
+      "level": 1,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "pin",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {},
+      "primary_domains": {
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "com",
+              "resolution": [],
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "pin",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        },
+        "baise": {
+          "fields": [
+            {
+              "category": [],
+              "default_value": 0,
+              "index": false,
+              "label": {
+                "i18n": {
+                  "zh-CN": "\u6570\u636e"
+                }
+              },
+              "name": "name",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "xiaofanggui___plant__baise"
+        }
+      },
+      "rollup": true,
+      "scope": "{xiaofanggui}company",
+      "secondary_domains": {},
+      "superclass": [],
+      "tags": [],
+      "timezone": "Asia/Shanghai"
+    },
+    "{xiaofanggui}shebei": {
+      "key": "equ",
+      "label": {
+        "i18n": {
+          "zh-CN": "\u8bbe\u5907"
+        }
+      },
+      "level": 2,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "equ",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {
+        "signal": {
+          "fields": [
+            {
+              "aggregated": false,
+              "category": [],
+              "default_stats": "avg",
+              "index": false,
+              "kind": "direct",
+              "label": {
+                "i18n": {
+                  "zh-CN": "\u7d27\u6025\u55b7\u653e"
+                }
+              },
+              "name": "signal.jinjipengfang",
+              "original_name": "jinjipengfang",
+              "policy": "drop-field",
+              "resolution": [
+                "5s"
+              ],
+              "timeseries": true,
+              "type": "number"
+            },
+            {
+              "aggregated": false,
+              "category": [],
+              "default_stats": "avg",
+              "index": false,
+              "kind": "direct",
+              "label": {
+                "i18n": {
+                  "zh-CN": "\u4e8c\u6b21\u55b7\u653e"
+                }
+              },
+              "name": "signal.ercipengfang",
+              "original_name": "ercipengfang",
+              "policy": "drop-field",
+              "resolution": [
+                "5s"
+              ],
+              "timeseries": true,
+              "type": "number"
+            }
+          ],
+          "mangled_name": "xiaofanggui___shebei__signal"
+        }
+      },
+      "primary_domains": {
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "com",
+              "resolution": [],
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "pin",
+              "resolution": [],
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "equ",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        },
+        "baise": {
+          "fields": [
+            {
+              "category": [],
+              "default_value": 0,
+              "index": false,
+              "label": {
+                "i18n": {
+                  "zh-CN": "\u6570\u636e"
+                }
+              },
+              "name": "name",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "metadata",
+          "mangled_name": "xiaofanggui___shebei__baise"
+        }
+      },
+      "rollup": true,
+      "scope": "{xiaofanggui}plant",
+      "secondary_domains": {},
+      "superclass": [],
+      "tags": [],
+      "timezone": "Asia/Shanghai"
+    }
+  },
+  "project": {
+    "lookups_enabled": false,
+    "name": "p2"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "com_1": {
+    "scope": "",
+    "mixins": {
+      "Lookup": {
+        "class": "{xiaofanggui}company",
+        "com": "com_1"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "com_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "com_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "com_1|pin_1": {
+    "scope": "com_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{xiaofanggui}plant",
+        "pin": "pin_1",
+        "com": "com_1"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "com_1|pin_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "com_1|pin_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ],
+    "related": [
+      {
+        "type": "relation_0",
+        "destination": "com_1|pin_1|equ_1"
+      },
+      {
+        "type": "relation_0",
+        "destination": "com_1|pin_1|equ_2"
+      },
+      {
+        "type": "relation_0",
+        "destination": "com_1"
+      }
+    ]
+  },
+  "com_1|pin_1|equ_1": {
+    "scope": "com_1|pin_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{xiaofanggui}shebei",
+        "equ": "equ_1",
+        "pin": "pin_1",
+        "com": "com_1"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "com_1|pin_1|equ_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "com_1|pin_1|equ_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ],
+    "related": [
+      {
+        "type": "relation_0",
+        "destination": "com_1|pin_1"
+      }
+    ]
+  },
+  "com_1|pin_1|equ_2": {
+    "scope": "com_1|pin_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{xiaofanggui}shebei",
+        "equ": "equ_2",
+        "pin": "pin_1",
+        "com": "com_1"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "com_1|pin_1|equ_2": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "com_1|pin_1|equ_2": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ],
+    "related": [
+      {
+        "type": "relation_0",
+        "destination": "com_1|pin_1"
+      }
+    ]
+  }
+}

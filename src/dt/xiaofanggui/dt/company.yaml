@@ -1,0 +1,40 @@
+---
+apiVersion: thingswise.com/v1
+kind: entity
+metadata:
+  label:
+    i18n: {zh-CN: 公司}
+spec:
+  class: company
+  key: com
+  lookups:
+  - {lookup_domain: Lookup, lookup_field: com, name: default}
+  rollup: true
+  superclass: []
+  tags: []
+  timezone: Asia/Shanghai
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: company
+  fields:
+  - category: []
+    default_value: 0
+    label:
+      i18n: {zh-CN: 数据}
+    name: name
+    type: string
+  name: baise
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: company
+  fields:
+  - category: []
+    index: true
+    name: com
+    type: string
+  kind: lookup
+  name: Lookup

@@ -1,0 +1,12 @@
+collate_search: false
+mixins:
+- name: xiaofanggui___shebei__baise
+- fields:
+    class: string
+    com: string
+    equ: string
+    pin: string
+  name: Lookup
+- name: xiaofanggui___shebei__signal
+- name: xiaofanggui___plant__baise
+- name: xiaofanggui___company__baise

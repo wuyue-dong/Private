@@ -1,0 +1,78 @@
+---
+apiVersion: thingswise.com/v1
+kind: entity
+metadata:
+  label:
+    i18n: {zh-CN: 设备}
+spec:
+  class: shebei
+  key: equ
+  lookups:
+  - {lookup_domain: Lookup, lookup_field: equ, name: default}
+  rollup: true
+  scope: plant
+  superclass: []
+  tags: []
+  timezone: Asia/Shanghai
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: shebei
+  fields:
+  - category: []
+    default_value: 0
+    label:
+      i18n: {zh-CN: 数据}
+    name: name
+    type: string
+  name: baise
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: shebei
+  fields:
+  - category: []
+    index: true
+    name: com
+    type: string
+  - category: []
+    index: true
+    name: pin
+    type: string
+  - category: []
+    index: true
+    name: equ
+    type: string
+  kind: lookup
+  name: Lookup
+---
+apiVersion: thingswise.com/v1
+kind: operationalDataDomain
+spec:
+  class: shebei
+  fields:
+  - aggregated: false
+    category: []
+    default_stats: avg
+    kind: direct
+    label:
+      i18n: {zh-CN: 紧急喷放}
+    name: signal.jinjipengfang
+    original_name: jinjipengfang
+    resolution: [5s]
+    timeseries: true
+    type: number
+  - aggregated: false
+    category: []
+    default_stats: avg
+    kind: direct
+    label:
+      i18n: {zh-CN: 二次喷放}
+    name: signal.ercipengfang
+    original_name: ercipengfang
+    resolution: [5s]
+    timeseries: true
+    type: number
+  name: signal
